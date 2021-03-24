@@ -1,0 +1,776 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C446BC821E322B6569BE35F2 /* Pods_Pandora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC34E34E3445867FE439127 /* Pods_Pandora.framework */; };
+		C75B5AC026088D3D00D0F866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5ABF26088D3D00D0F866 /* AppDelegate.swift */; };
+		C75B5AC226088D3D00D0F866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5AC126088D3D00D0F866 /* SceneDelegate.swift */; };
+		C75B5AC726088D3D00D0F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75B5AC526088D3D00D0F866 /* Main.storyboard */; };
+		C75B5AC926088D3E00D0F866 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C75B5AC826088D3E00D0F866 /* Assets.xcassets */; };
+		C75B5ACC26088D3E00D0F866 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75B5ACA26088D3E00D0F866 /* LaunchScreen.storyboard */; };
+		C75B5AD726088D3F00D0F866 /* PandoraTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5AD626088D3F00D0F866 /* PandoraTests.swift */; };
+		C75B5AE226088D3F00D0F866 /* PandoraUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5AE126088D3F00D0F866 /* PandoraUITests.swift */; };
+		C75B5B1326089B6000D0F866 /* PandoraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5B1226089B6000D0F866 /* PandoraTableViewController.swift */; };
+		C75B5B1B26089DB600D0F866 /* SubscribeEmailNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5B1A26089DB600D0F866 /* SubscribeEmailNotificationController.swift */; };
+		C75B5B232608A14200D0F866 /* NibProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5B222608A14200D0F866 /* NibProtocol.swift */; };
+		C7E18E21260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E20260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift */; };
+		C7E18E2A26098B74000DF5B0 /* ValidateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E2926098B74000DF5B0 /* ValidateUtil.swift */; };
+		C7E18E3226098BF0000DF5B0 /* EmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E3126098BF0000DF5B0 /* EmailService.swift */; };
+		C7E18E3726098C73000DF5B0 /* EmailApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E3626098C73000DF5B0 /* EmailApi.swift */; };
+		C7E18E5026098EDF000DF5B0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E4F26098EDF000DF5B0 /* Networking.swift */; };
+		C7E18E8C2609BFA0000DF5B0 /* PandoraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E8B2609BFA0000DF5B0 /* PandoraError.swift */; };
+		C7E18E972609CAFF000DF5B0 /* PandoraResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E962609CAFF000DF5B0 /* PandoraResult.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C75B5AD326088D3F00D0F866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75B5AB426088D3D00D0F866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75B5ABB26088D3D00D0F866;
+			remoteInfo = Pandora;
+		};
+		C75B5ADE26088D3F00D0F866 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C75B5AB426088D3D00D0F866 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C75B5ABB26088D3D00D0F866;
+			remoteInfo = Pandora;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7A2281FAF5B8E4FEF46C8B60 /* Pods-Pandora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandora.debug.xcconfig"; path = "Target Support Files/Pods-Pandora/Pods-Pandora.debug.xcconfig"; sourceTree = "<group>"; };
+		AFC34E34E3445867FE439127 /* Pods_Pandora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pandora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75B5ABC26088D3D00D0F866 /* Pandora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pandora.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75B5ABF26088D3D00D0F866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C75B5AC126088D3D00D0F866 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C75B5AC626088D3D00D0F866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C75B5AC826088D3E00D0F866 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C75B5ACB26088D3E00D0F866 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C75B5ACD26088D3E00D0F866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75B5AD226088D3F00D0F866 /* PandoraTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandoraTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75B5AD626088D3F00D0F866 /* PandoraTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraTests.swift; sourceTree = "<group>"; };
+		C75B5AD826088D3F00D0F866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75B5ADD26088D3F00D0F866 /* PandoraUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PandoraUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C75B5AE126088D3F00D0F866 /* PandoraUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraUITests.swift; sourceTree = "<group>"; };
+		C75B5AE326088D3F00D0F866 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C75B5AFB26088FF000D0F866 /* Pandora.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pandora.entitlements; sourceTree = "<group>"; };
+		C75B5B082608955100D0F866 /* Pandora-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pandora-Bridging-Header.h"; sourceTree = "<group>"; };
+		C75B5B1226089B6000D0F866 /* PandoraTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraTableViewController.swift; sourceTree = "<group>"; };
+		C75B5B1A26089DB600D0F866 /* SubscribeEmailNotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeEmailNotificationController.swift; sourceTree = "<group>"; };
+		C75B5B222608A14200D0F866 /* NibProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibProtocol.swift; sourceTree = "<group>"; };
+		C7E18E20260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeEmailNotificationViewModel.swift; sourceTree = "<group>"; };
+		C7E18E2926098B74000DF5B0 /* ValidateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUtil.swift; sourceTree = "<group>"; };
+		C7E18E3126098BF0000DF5B0 /* EmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailService.swift; sourceTree = "<group>"; };
+		C7E18E3626098C73000DF5B0 /* EmailApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailApi.swift; sourceTree = "<group>"; };
+		C7E18E4F26098EDF000DF5B0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		C7E18E8B2609BFA0000DF5B0 /* PandoraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraError.swift; sourceTree = "<group>"; };
+		C7E18E962609CAFF000DF5B0 /* PandoraResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraResult.swift; sourceTree = "<group>"; };
+		E1B567E4887EB71A92CB332B /* Pods-Pandora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandora.release.xcconfig"; path = "Target Support Files/Pods-Pandora/Pods-Pandora.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C75B5AB926088D3D00D0F866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C446BC821E322B6569BE35F2 /* Pods_Pandora.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B5ACF26088D3F00D0F866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B5ADA26088D3F00D0F866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		81075EF6BC9086005A6E3FFC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AFC34E34E3445867FE439127 /* Pods_Pandora.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C75B5AB326088D3D00D0F866 = {
+			isa = PBXGroup;
+			children = (
+				C75B5ABE26088D3D00D0F866 /* Pandora */,
+				C75B5AD526088D3F00D0F866 /* PandoraTests */,
+				C75B5AE026088D3F00D0F866 /* PandoraUITests */,
+				C75B5ABD26088D3D00D0F866 /* Products */,
+				E84151F6BA13041F219CC02E /* Pods */,
+				81075EF6BC9086005A6E3FFC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C75B5ABD26088D3D00D0F866 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C75B5ABC26088D3D00D0F866 /* Pandora.app */,
+				C75B5AD226088D3F00D0F866 /* PandoraTests.xctest */,
+				C75B5ADD26088D3F00D0F866 /* PandoraUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C75B5ABE26088D3D00D0F866 /* Pandora */ = {
+			isa = PBXGroup;
+			children = (
+				C75B5B2726097BCE00D0F866 /* View */,
+				C7E18E1926098677000DF5B0 /* ViewModel */,
+				C7E18E1A260986BA000DF5B0 /* Model */,
+				C7E18E1C2609870E000DF5B0 /* Service */,
+				C7E18E1B260986ED000DF5B0 /* Repository */,
+				C7E18E1D2609876A000DF5B0 /* Common */,
+				C7E18E2826098B25000DF5B0 /* Util */,
+				C75B5B2826097BDA00D0F866 /* Other */,
+				C75B5AFB26088FF000D0F866 /* Pandora.entitlements */,
+				C75B5B222608A14200D0F866 /* NibProtocol.swift */,
+				C75B5AC826088D3E00D0F866 /* Assets.xcassets */,
+				C75B5ACA26088D3E00D0F866 /* LaunchScreen.storyboard */,
+				C75B5ACD26088D3E00D0F866 /* Info.plist */,
+				C75B5B082608955100D0F866 /* Pandora-Bridging-Header.h */,
+			);
+			path = Pandora;
+			sourceTree = "<group>";
+		};
+		C75B5AD526088D3F00D0F866 /* PandoraTests */ = {
+			isa = PBXGroup;
+			children = (
+				C75B5AD626088D3F00D0F866 /* PandoraTests.swift */,
+				C75B5AD826088D3F00D0F866 /* Info.plist */,
+			);
+			path = PandoraTests;
+			sourceTree = "<group>";
+		};
+		C75B5AE026088D3F00D0F866 /* PandoraUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C75B5AE126088D3F00D0F866 /* PandoraUITests.swift */,
+				C75B5AE326088D3F00D0F866 /* Info.plist */,
+			);
+			path = PandoraUITests;
+			sourceTree = "<group>";
+		};
+		C75B5B2726097BCE00D0F866 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C75B5AC526088D3D00D0F866 /* Main.storyboard */,
+				C75B5B1226089B6000D0F866 /* PandoraTableViewController.swift */,
+				C75B5B1A26089DB600D0F866 /* SubscribeEmailNotificationController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C75B5B2826097BDA00D0F866 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C75B5ABF26088D3D00D0F866 /* AppDelegate.swift */,
+				C75B5AC126088D3D00D0F866 /* SceneDelegate.swift */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		C7E18E1926098677000DF5B0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				C7E18E20260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		C7E18E1A260986BA000DF5B0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		C7E18E1B260986ED000DF5B0 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				C7E18E3626098C73000DF5B0 /* EmailApi.swift */,
+				C7E18E4F26098EDF000DF5B0 /* Networking.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		C7E18E1C2609870E000DF5B0 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C7E18E3126098BF0000DF5B0 /* EmailService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		C7E18E1D2609876A000DF5B0 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				C7E18E8B2609BFA0000DF5B0 /* PandoraError.swift */,
+				C7E18E962609CAFF000DF5B0 /* PandoraResult.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		C7E18E2826098B25000DF5B0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				C7E18E2926098B74000DF5B0 /* ValidateUtil.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		E84151F6BA13041F219CC02E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A2281FAF5B8E4FEF46C8B60 /* Pods-Pandora.debug.xcconfig */,
+				E1B567E4887EB71A92CB332B /* Pods-Pandora.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C75B5ABB26088D3D00D0F866 /* Pandora */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C75B5AE626088D3F00D0F866 /* Build configuration list for PBXNativeTarget "Pandora" */;
+			buildPhases = (
+				0AAC4C8BA09B8723E143131E /* [CP] Check Pods Manifest.lock */,
+				C75B5AB826088D3D00D0F866 /* Sources */,
+				C75B5AB926088D3D00D0F866 /* Frameworks */,
+				C75B5ABA26088D3D00D0F866 /* Resources */,
+				EF1707BA0F50BBD682073F9E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pandora;
+			productName = Pandora;
+			productReference = C75B5ABC26088D3D00D0F866 /* Pandora.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C75B5AD126088D3F00D0F866 /* PandoraTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C75B5AE926088D3F00D0F866 /* Build configuration list for PBXNativeTarget "PandoraTests" */;
+			buildPhases = (
+				C75B5ACE26088D3F00D0F866 /* Sources */,
+				C75B5ACF26088D3F00D0F866 /* Frameworks */,
+				C75B5AD026088D3F00D0F866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C75B5AD426088D3F00D0F866 /* PBXTargetDependency */,
+			);
+			name = PandoraTests;
+			productName = PandoraTests;
+			productReference = C75B5AD226088D3F00D0F866 /* PandoraTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C75B5ADC26088D3F00D0F866 /* PandoraUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C75B5AEC26088D3F00D0F866 /* Build configuration list for PBXNativeTarget "PandoraUITests" */;
+			buildPhases = (
+				C75B5AD926088D3F00D0F866 /* Sources */,
+				C75B5ADA26088D3F00D0F866 /* Frameworks */,
+				C75B5ADB26088D3F00D0F866 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C75B5ADF26088D3F00D0F866 /* PBXTargetDependency */,
+			);
+			name = PandoraUITests;
+			productName = PandoraUITests;
+			productReference = C75B5ADD26088D3F00D0F866 /* PandoraUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C75B5AB426088D3D00D0F866 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					C75B5ABB26088D3D00D0F866 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					C75B5AD126088D3F00D0F866 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = C75B5ABB26088D3D00D0F866;
+					};
+					C75B5ADC26088D3F00D0F866 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = C75B5ABB26088D3D00D0F866;
+					};
+				};
+			};
+			buildConfigurationList = C75B5AB726088D3D00D0F866 /* Build configuration list for PBXProject "Pandora" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C75B5AB326088D3D00D0F866;
+			productRefGroup = C75B5ABD26088D3D00D0F866 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C75B5ABB26088D3D00D0F866 /* Pandora */,
+				C75B5AD126088D3F00D0F866 /* PandoraTests */,
+				C75B5ADC26088D3F00D0F866 /* PandoraUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C75B5ABA26088D3D00D0F866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75B5ACC26088D3E00D0F866 /* LaunchScreen.storyboard in Resources */,
+				C75B5AC926088D3E00D0F866 /* Assets.xcassets in Resources */,
+				C75B5AC726088D3D00D0F866 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B5AD026088D3F00D0F866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B5ADB26088D3F00D0F866 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AAC4C8BA09B8723E143131E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pandora-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF1707BA0F50BBD682073F9E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pandora/Pods-Pandora-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pandora/Pods-Pandora-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pandora/Pods-Pandora-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C75B5AB826088D3D00D0F866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7E18E5026098EDF000DF5B0 /* Networking.swift in Sources */,
+				C75B5B1326089B6000D0F866 /* PandoraTableViewController.swift in Sources */,
+				C7E18E21260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift in Sources */,
+				C75B5B1B26089DB600D0F866 /* SubscribeEmailNotificationController.swift in Sources */,
+				C7E18E2A26098B74000DF5B0 /* ValidateUtil.swift in Sources */,
+				C75B5B232608A14200D0F866 /* NibProtocol.swift in Sources */,
+				C7E18E972609CAFF000DF5B0 /* PandoraResult.swift in Sources */,
+				C7E18E8C2609BFA0000DF5B0 /* PandoraError.swift in Sources */,
+				C75B5AC026088D3D00D0F866 /* AppDelegate.swift in Sources */,
+				C7E18E3226098BF0000DF5B0 /* EmailService.swift in Sources */,
+				C75B5AC226088D3D00D0F866 /* SceneDelegate.swift in Sources */,
+				C7E18E3726098C73000DF5B0 /* EmailApi.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B5ACE26088D3F00D0F866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75B5AD726088D3F00D0F866 /* PandoraTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C75B5AD926088D3F00D0F866 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C75B5AE226088D3F00D0F866 /* PandoraUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C75B5AD426088D3F00D0F866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75B5ABB26088D3D00D0F866 /* Pandora */;
+			targetProxy = C75B5AD326088D3F00D0F866 /* PBXContainerItemProxy */;
+		};
+		C75B5ADF26088D3F00D0F866 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C75B5ABB26088D3D00D0F866 /* Pandora */;
+			targetProxy = C75B5ADE26088D3F00D0F866 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C75B5AC526088D3D00D0F866 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C75B5AC626088D3D00D0F866 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C75B5ACA26088D3E00D0F866 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C75B5ACB26088D3E00D0F866 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C75B5AE426088D3F00D0F866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C75B5AE526088D3F00D0F866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C75B5AE726088D3F00D0F866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A2281FAF5B8E4FEF46C8B60 /* Pods-Pandora.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pandora/Pandora.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8PVK52JS2;
+				INFOPLIST_FILE = Pandora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eetrust.Pandora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pandora/Pandora-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C75B5AE826088D3F00D0F866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B567E4887EB71A92CB332B /* Pods-Pandora.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Pandora/Pandora.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8PVK52JS2;
+				INFOPLIST_FILE = Pandora/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eetrust.Pandora;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Pandora/Pandora-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C75B5AEA26088D3F00D0F866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8PVK52JS2;
+				INFOPLIST_FILE = PandoraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eetrust.PandoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pandora.app/Pandora";
+			};
+			name = Debug;
+		};
+		C75B5AEB26088D3F00D0F866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8PVK52JS2;
+				INFOPLIST_FILE = PandoraTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eetrust.PandoraTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pandora.app/Pandora";
+			};
+			name = Release;
+		};
+		C75B5AED26088D3F00D0F866 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8PVK52JS2;
+				INFOPLIST_FILE = PandoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eetrust.PandoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pandora;
+			};
+			name = Debug;
+		};
+		C75B5AEE26088D3F00D0F866 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = W8PVK52JS2;
+				INFOPLIST_FILE = PandoraUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.eetrust.PandoraUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Pandora;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C75B5AB726088D3D00D0F866 /* Build configuration list for PBXProject "Pandora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75B5AE426088D3F00D0F866 /* Debug */,
+				C75B5AE526088D3F00D0F866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C75B5AE626088D3F00D0F866 /* Build configuration list for PBXNativeTarget "Pandora" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75B5AE726088D3F00D0F866 /* Debug */,
+				C75B5AE826088D3F00D0F866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C75B5AE926088D3F00D0F866 /* Build configuration list for PBXNativeTarget "PandoraTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75B5AEA26088D3F00D0F866 /* Debug */,
+				C75B5AEB26088D3F00D0F866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C75B5AEC26088D3F00D0F866 /* Build configuration list for PBXNativeTarget "PandoraUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C75B5AED26088D3F00D0F866 /* Debug */,
+				C75B5AEE26088D3F00D0F866 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C75B5AB426088D3D00D0F866 /* Project object */;
+}

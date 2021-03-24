@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="LZv-hg-Vqj">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--功能-->
+        <scene sceneID="sPa-bx-Nv5">
+            <objects>
+                <tableViewController id="c0N-UO-piN" customClass="PandoraTableViewController" customModule="Pandora" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="wco-qq-gIG">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fVJ-cU-kss">
+                                <rect key="frame" x="0.0" y="28" width="600" height="43.5"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fVJ-cU-kss" id="GiB-2s-2QA">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="c0N-UO-piN" id="unO-i0-TAX"/>
+                            <outlet property="delegate" destination="c0N-UO-piN" id="FmG-ll-rQc"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="功能" id="3Cl-92-3C6"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AAh-cE-WIx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-558" y="-189"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yN0-FI-VCi">
+            <objects>
+                <navigationController id="LZv-hg-Vqj" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hBr-ea-VLO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="c0N-UO-piN" kind="relationship" relationship="rootViewController" id="cQ0-bp-Eoc"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eVV-mi-4gY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1447" y="-189"/>
+        </scene>
+        <!--Subscribe Email Notification Controller-->
+        <scene sceneID="lhe-uJ-JMA">
+            <objects>
+                <viewController storyboardIdentifier="openEmailNotification" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ebc-z1-0QD" customClass="SubscribeEmailNotificationController" customModule="Pandora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7rl-xI-xoo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ngx-AH-6Wk">
+                                <rect key="frame" x="20" y="50" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="kOx-e2-ONK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ybf-SA-oPa">
+                                <rect key="frame" x="20" y="150" width="560" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ClU-JH-Ifr"/>
+                                </constraints>
+                                <state key="normal" title="开启未读邮件通知"/>
+                                <connections>
+                                    <action selector="submit:" destination="ebc-z1-0QD" eventType="touchUpInside" id="4dJ-sv-jYA"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="WVf-9k-AZ7"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Ybf-SA-oPa" firstAttribute="top" secondItem="Ngx-AH-6Wk" secondAttribute="bottom" constant="60" id="MJw-UW-kDZ"/>
+                            <constraint firstItem="Ngx-AH-6Wk" firstAttribute="leading" secondItem="WVf-9k-AZ7" secondAttribute="leading" constant="20" id="R69-rY-Jaf"/>
+                            <constraint firstItem="Ybf-SA-oPa" firstAttribute="leading" secondItem="WVf-9k-AZ7" secondAttribute="leading" constant="20" id="YOB-Dp-iZi"/>
+                            <constraint firstItem="Ngx-AH-6Wk" firstAttribute="top" secondItem="WVf-9k-AZ7" secondAttribute="top" constant="50" id="qVp-LF-2T7"/>
+                            <constraint firstItem="WVf-9k-AZ7" firstAttribute="trailing" secondItem="Ybf-SA-oPa" secondAttribute="trailing" constant="20" id="wzO-D7-qmw"/>
+                            <constraint firstItem="WVf-9k-AZ7" firstAttribute="trailing" secondItem="Ngx-AH-6Wk" secondAttribute="trailing" constant="20" id="y6E-mw-oAv"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="emailTextField" destination="Ngx-AH-6Wk" id="r1d-wn-N76"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IDA-KN-dFX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1448" y="483"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
