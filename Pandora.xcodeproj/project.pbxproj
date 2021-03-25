@@ -25,6 +25,9 @@
 		C7E18E5026098EDF000DF5B0 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E4F26098EDF000DF5B0 /* Networking.swift */; };
 		C7E18E8C2609BFA0000DF5B0 /* PandoraError.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E8B2609BFA0000DF5B0 /* PandoraError.swift */; };
 		C7E18E972609CAFF000DF5B0 /* PandoraResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E962609CAFF000DF5B0 /* PandoraResult.swift */; };
+		C7E18E9C260C2842000DF5B0 /* SubscribedEmailNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E9B260C2842000DF5B0 /* SubscribedEmailNotificationController.swift */; };
+		C7E18EA4260C28E8000DF5B0 /* SubscribedEmailNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18EA3260C28E8000DF5B0 /* SubscribedEmailNotificationViewModel.swift */; };
+		C7E18EA9260C2AC3000DF5B0 /* EmailRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18EA8260C2AC3000DF5B0 /* EmailRes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +75,9 @@
 		C7E18E4F26098EDF000DF5B0 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		C7E18E8B2609BFA0000DF5B0 /* PandoraError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraError.swift; sourceTree = "<group>"; };
 		C7E18E962609CAFF000DF5B0 /* PandoraResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraResult.swift; sourceTree = "<group>"; };
+		C7E18E9B260C2842000DF5B0 /* SubscribedEmailNotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribedEmailNotificationController.swift; sourceTree = "<group>"; };
+		C7E18EA3260C28E8000DF5B0 /* SubscribedEmailNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribedEmailNotificationViewModel.swift; sourceTree = "<group>"; };
+		C7E18EA8260C2AC3000DF5B0 /* EmailRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailRes.swift; sourceTree = "<group>"; };
 		E1B567E4887EB71A92CB332B /* Pods-Pandora.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandora.release.xcconfig"; path = "Target Support Files/Pods-Pandora/Pods-Pandora.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,6 +182,7 @@
 				C75B5AC526088D3D00D0F866 /* Main.storyboard */,
 				C75B5B1226089B6000D0F866 /* PandoraTableViewController.swift */,
 				C75B5B1A26089DB600D0F866 /* SubscribeEmailNotificationController.swift */,
+				C7E18E9B260C2842000DF5B0 /* SubscribedEmailNotificationController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -193,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E18E20260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift */,
+				C7E18EA3260C28E8000DF5B0 /* SubscribedEmailNotificationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -200,6 +208,7 @@
 		C7E18E1A260986BA000DF5B0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C7E18EA8260C2AC3000DF5B0 /* EmailRes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -422,7 +431,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C7E18E5026098EDF000DF5B0 /* Networking.swift in Sources */,
+				C7E18EA9260C2AC3000DF5B0 /* EmailRes.swift in Sources */,
 				C75B5B1326089B6000D0F866 /* PandoraTableViewController.swift in Sources */,
+				C7E18EA4260C28E8000DF5B0 /* SubscribedEmailNotificationViewModel.swift in Sources */,
+				C7E18E9C260C2842000DF5B0 /* SubscribedEmailNotificationController.swift in Sources */,
 				C7E18E21260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift in Sources */,
 				C75B5B1B26089DB600D0F866 /* SubscribeEmailNotificationController.swift in Sources */,
 				C7E18E2A26098B74000DF5B0 /* ValidateUtil.swift in Sources */,

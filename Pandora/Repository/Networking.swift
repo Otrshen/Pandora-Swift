@@ -25,9 +25,8 @@ class Networking<T: TargetType> {
         }
     }
     
-    /// 初始化需要全局用到的一些数据,暂时没有需要初始化的
     init() {
-        provider = MoyaProvider<T>(requestClosure: requestTimeoutClosure, plugins:[NetworkLoggerPlugin()])
+        self.provider = MoyaProvider<T>(requestClosure: requestTimeoutClosure, plugins:[NetworkLoggerPlugin()])
     }
 
     /// 请求方法：包括成功、服务器状态码不正确、失败回调
@@ -35,7 +34,6 @@ class Networking<T: TargetType> {
     /// - Parameters:
     ///   - target: 接口
     ///   - successCallback: 成功回调
-    ///   - statusErrorCallback: 服务器状态码不正确
     ///   - failureCallback: 失败回调
     func request(_ target: T,
                  success successCallback: @escaping(_ json: JSON) -> Void,

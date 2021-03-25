@@ -30,4 +30,17 @@ class EmailService {
             completion(.failed(error: error))
         }
     }
+    
+    func querySubscribedEmail(completion: @escaping(_ result : PandoraResult) -> ()) {
+        network.request(.queryAllSubscribedEmail) { (json) in
+            let res = EmailRes.deserialize(from: json.rawString())
+            if let list = res?.data {
+                completion(.ok(any: list))
+            } else {
+                completion(.failed(error: PandoraError(code: PandoraError.e_NullData)))
+            }
+        } failure: { (error) in
+            completion(.failed(error: error))
+        }
+    }
 }

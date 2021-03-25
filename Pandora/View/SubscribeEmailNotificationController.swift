@@ -19,8 +19,6 @@ class SubscribeEmailNotificationController: UIViewController, NibProtocol {
         
         title = "开启通知"
         view.backgroundColor = .white
-        
-        emailTextField.text = "shenyntest@eetrust.com"
     }
     
     @IBAction func submit(_ sender: Any) {

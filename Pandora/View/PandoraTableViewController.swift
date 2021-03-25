@@ -7,7 +7,8 @@
 
 import UIKit
 
-let kOpenEmailNotification = "开启邮箱通知"
+let kSubscribeEmailNotification = "订阅邮箱通知"
+let kSubscribedEmailNotification = "已订阅邮箱通知人员"
 
 class PandoraTableViewController: UITableViewController {
     
@@ -16,7 +17,8 @@ class PandoraTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        operations.append(kOpenEmailNotification)
+        operations.append(kSubscribeEmailNotification)
+        operations.append(kSubscribedEmailNotification)
 
         view.backgroundColor = .white
         tableView.register(UITableViewCell.self, forCellReuseIdentifier: "PandoraCell")
@@ -36,9 +38,11 @@ class PandoraTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        if operations[indexPath.row] == kOpenEmailNotification {
+        if operations[indexPath.row] == kSubscribeEmailNotification {
             let vc = SubscribeEmailNotificationController.loadFromStoryboard(name: "Main", identifier: "openEmailNotification")
             navigationController?.pushViewController(vc, animated: true)
+        } else if operations[indexPath.row] ==  kSubscribedEmailNotification {
+            navigationController?.pushViewController(SubscribedEmailNotificationController(), animated: true)
         }
     }
 

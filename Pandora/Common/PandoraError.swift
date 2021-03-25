@@ -18,8 +18,11 @@ class PandoraError: NSObject, CustomNSError {
     static let e_Unknown = "-3"
     /// 解析错误
     static let e_Parse = "-4"
+    /// 空数据
+    static let e_NullData = "-5"
     /// 自定义错误码
     static let e_Custom = "-100"
+    
     
     /** -------------- 错误信息 --------------- */
     
@@ -72,7 +75,8 @@ class PandoraError: NSObject, CustomNSError {
     private func initLocalError() {
         errorCodeToMsgDict = [
             PandoraError.e_ParamsError : "参数错误",
-            PandoraError.e_Parse : "数据解析错误"
+            PandoraError.e_Parse : "数据解析错误",
+            PandoraError.e_NullData : "Data为空"
         ]
     }
     
