@@ -17,7 +17,7 @@ class EmailRes: HandyJSON {
 
 class Email: HandyJSON {
     var id: String?
-    var email: String?
+    var emailAddress: String?
     
     required init() {}
 }

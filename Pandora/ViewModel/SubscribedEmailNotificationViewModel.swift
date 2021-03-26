@@ -12,10 +12,12 @@ class SubscribedEmailNotificationViewModel: NSObject {
     private let service = EmailService()
 
     public func queryAllSubscribedEmail(completion: @escaping(_ result : Array<Email>) -> ()) {
+        SVProgressHUD.show()
         service.querySubscribedEmail { (result) in
             switch result {
             case .ok(let arr):
                 if let emails = arr as? Array<Email> {
+                    SVProgressHUD.dismiss()
                     completion(emails)
                 } else {
                     SVProgressHUD.showError(withStatus: "转换类型错误")

@@ -17,7 +17,7 @@ class SubscribeEmailNotificationController: UIViewController, NibProtocol {
 
         viewModel = SubscribeEmailNotificationViewModel();
         
-        title = "开启通知"
+        title = "订阅通知"
         view.backgroundColor = .white
     }
     

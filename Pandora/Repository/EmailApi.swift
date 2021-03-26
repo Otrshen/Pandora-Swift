@@ -4,10 +4,17 @@
 //
 //  Created by 申铭 on 2021/3/23.
 //
+//  shenyn@eetrust.com
 
 import Moya
 
-let kUrl = "http://127.0.0.1:8886/pandora"
+#if DEBUG
+// 申铭的测试环境
+let kUrl = "http://192.168.1.51:8886/pandora"
+#else
+// 申铭的阿里云环境
+let kUrl = "http://123.57.83.189:8886/pandora"
+#endif
 
 enum EmailApi {
     case subscribeNotification(params: [String : Any])

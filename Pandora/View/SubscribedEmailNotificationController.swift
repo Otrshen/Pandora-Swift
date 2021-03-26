@@ -33,7 +33,7 @@ class SubscribedEmailNotificationController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SubscribedEmailCell", for: indexPath)
-        cell.textLabel?.text = emailArr[indexPath.row].email
+        cell.textLabel?.text = emailArr[indexPath.row].emailAddress
         return cell
     }
 
