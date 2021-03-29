@@ -14,6 +14,17 @@ class Networking<T: TargetType> {
     
     private var provider : MoyaProvider<T>;
     
+    // 格式化Json -- 打印插件
+    private let JSONResponseDataFormatter = { (data: Data) -> String in
+        do {
+            let dataAsJSON = try JSONSerialization.jsonObject(with: data)
+            let prettyData = try JSONSerialization.data(withJSONObject: dataAsJSON, options: .prettyPrinted)
+            return String(data: prettyData, encoding: .utf8) ?? String(data: data, encoding: .utf8) ?? ""
+        } catch {
+            return String(data: data, encoding: .utf8) ?? ""
+        }
+    }
+    
     // 超时时间
     private let requestTimeoutClosure = { (endpoint:Endpoint, done: @escaping MoyaProvider<T>.RequestResultClosure) in
         do {
@@ -26,7 +37,7 @@ class Networking<T: TargetType> {
     }
     
     init() {
-        self.provider = MoyaProvider<T>(requestClosure: requestTimeoutClosure, plugins:[NetworkLoggerPlugin()])
+        self.provider = MoyaProvider<T>(requestClosure: requestTimeoutClosure, plugins:[NetworkLoggerPlugin(configuration: .init(formatter: .init(responseData:JSONResponseDataFormatter), logOptions: .verbose))])
     }
 
     /// 请求方法：包括成功、服务器状态码不正确、失败回调
@@ -78,5 +89,8 @@ class Networking<T: TargetType> {
             }
         }
     }
+    
+    deinit {
+        print("Networking_deinit")
+    }
 }
-

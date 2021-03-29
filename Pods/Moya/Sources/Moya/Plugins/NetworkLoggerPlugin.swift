@@ -115,7 +115,7 @@ private extension NetworkLoggerPlugin {
 
 // MARK: - Configuration
 public extension NetworkLoggerPlugin {
-    struct Configuration {
+struct Configuration {
 
         // MARK: - Typealiases
         // swiftlint:disable nesting
