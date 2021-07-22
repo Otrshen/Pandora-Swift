@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		C446BC821E322B6569BE35F2 /* Pods_Pandora.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFC34E34E3445867FE439127 /* Pods_Pandora.framework */; };
+		C70CD6082612BA6D0041B243 /* aaao.caf in Resources */ = {isa = PBXBuildFile; fileRef = C70CD6072612BA6D0041B243 /* aaao.caf */; };
 		C75B5AC026088D3D00D0F866 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5ABF26088D3D00D0F866 /* AppDelegate.swift */; };
 		C75B5AC226088D3D00D0F866 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5AC126088D3D00D0F866 /* SceneDelegate.swift */; };
 		C75B5AC726088D3D00D0F866 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C75B5AC526088D3D00D0F866 /* Main.storyboard */; };
@@ -18,6 +19,8 @@
 		C75B5B1326089B6000D0F866 /* PandoraTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5B1226089B6000D0F866 /* PandoraTableViewController.swift */; };
 		C75B5B1B26089DB600D0F866 /* SubscribeEmailNotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5B1A26089DB600D0F866 /* SubscribeEmailNotificationController.swift */; };
 		C75B5B232608A14200D0F866 /* NibProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75B5B222608A14200D0F866 /* NibProtocol.swift */; };
+		C75EB2E326A6D17B007A08FB /* WebUploaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75EB2E226A6D17B007A08FB /* WebUploaderController.swift */; };
+		C75EB30026A7BC8D007A08FB /* FileUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C75EB2FF26A7BC8D007A08FB /* FileUtil.swift */; };
 		C7E18E21260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E20260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift */; };
 		C7E18E2A26098B74000DF5B0 /* ValidateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E2926098B74000DF5B0 /* ValidateUtil.swift */; };
 		C7E18E3226098BF0000DF5B0 /* EmailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7E18E3126098BF0000DF5B0 /* EmailService.swift */; };
@@ -50,6 +53,7 @@
 /* Begin PBXFileReference section */
 		7A2281FAF5B8E4FEF46C8B60 /* Pods-Pandora.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pandora.debug.xcconfig"; path = "Target Support Files/Pods-Pandora/Pods-Pandora.debug.xcconfig"; sourceTree = "<group>"; };
 		AFC34E34E3445867FE439127 /* Pods_Pandora.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pandora.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C70CD6072612BA6D0041B243 /* aaao.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = aaao.caf; sourceTree = "<group>"; };
 		C75B5ABC26088D3D00D0F866 /* Pandora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pandora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C75B5ABF26088D3D00D0F866 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C75B5AC126088D3D00D0F866 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +72,8 @@
 		C75B5B1226089B6000D0F866 /* PandoraTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PandoraTableViewController.swift; sourceTree = "<group>"; };
 		C75B5B1A26089DB600D0F866 /* SubscribeEmailNotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeEmailNotificationController.swift; sourceTree = "<group>"; };
 		C75B5B222608A14200D0F866 /* NibProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibProtocol.swift; sourceTree = "<group>"; };
+		C75EB2E226A6D17B007A08FB /* WebUploaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebUploaderController.swift; sourceTree = "<group>"; };
+		C75EB2FF26A7BC8D007A08FB /* FileUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUtil.swift; sourceTree = "<group>"; };
 		C7E18E20260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribeEmailNotificationViewModel.swift; sourceTree = "<group>"; };
 		C7E18E2926098B74000DF5B0 /* ValidateUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUtil.swift; sourceTree = "<group>"; };
 		C7E18E3126098BF0000DF5B0 /* EmailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailService.swift; sourceTree = "<group>"; };
@@ -115,6 +121,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C70CD6062612BA060041B243 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				C70CD6072612BA6D0041B243 /* aaao.caf */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		C75B5AB326088D3D00D0F866 = {
 			isa = PBXGroup;
 			children = (
@@ -148,6 +162,7 @@
 				C7E18E1D2609876A000DF5B0 /* Common */,
 				C7E18E2826098B25000DF5B0 /* Util */,
 				C75B5B2826097BDA00D0F866 /* Other */,
+				C70CD6062612BA060041B243 /* Resource */,
 				C75B5AFB26088FF000D0F866 /* Pandora.entitlements */,
 				C75B5B222608A14200D0F866 /* NibProtocol.swift */,
 				C75B5AC826088D3E00D0F866 /* Assets.xcassets */,
@@ -183,6 +198,7 @@
 				C75B5B1226089B6000D0F866 /* PandoraTableViewController.swift */,
 				C75B5B1A26089DB600D0F866 /* SubscribeEmailNotificationController.swift */,
 				C7E18E9B260C2842000DF5B0 /* SubscribedEmailNotificationController.swift */,
+				C75EB2E226A6D17B007A08FB /* WebUploaderController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -243,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				C7E18E2926098B74000DF5B0 /* ValidateUtil.swift */,
+				C75EB2FF26A7BC8D007A08FB /* FileUtil.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -363,6 +380,7 @@
 			files = (
 				C75B5ACC26088D3E00D0F866 /* LaunchScreen.storyboard in Resources */,
 				C75B5AC926088D3E00D0F866 /* Assets.xcassets in Resources */,
+				C70CD6082612BA6D0041B243 /* aaao.caf in Resources */,
 				C75B5AC726088D3D00D0F866 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -430,10 +448,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75EB30026A7BC8D007A08FB /* FileUtil.swift in Sources */,
 				C7E18E5026098EDF000DF5B0 /* Networking.swift in Sources */,
 				C7E18EA9260C2AC3000DF5B0 /* EmailRes.swift in Sources */,
 				C75B5B1326089B6000D0F866 /* PandoraTableViewController.swift in Sources */,
 				C7E18EA4260C28E8000DF5B0 /* SubscribedEmailNotificationViewModel.swift in Sources */,
+				C75EB2E326A6D17B007A08FB /* WebUploaderController.swift in Sources */,
 				C7E18E9C260C2842000DF5B0 /* SubscribedEmailNotificationController.swift in Sources */,
 				C7E18E21260987CF000DF5B0 /* SubscribeEmailNotificationViewModel.swift in Sources */,
 				C75B5B1B26089DB600D0F866 /* SubscribeEmailNotificationController.swift in Sources */,
@@ -629,7 +649,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eetrust.Pandora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pandora/Pandora-Bridging-Header.h";
@@ -652,7 +672,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0.1;
+				MARKETING_VERSION = 1.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.eetrust.Pandora;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Pandora/Pandora-Bridging-Header.h";

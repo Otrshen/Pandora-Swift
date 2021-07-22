@@ -9,6 +9,7 @@ import UIKit
 
 let kSubscribeEmailNotification = "订阅邮箱通知"
 let kSubscribedEmailNotification = "已订阅邮箱通知人员"
+let kWebUploader = "上传文件至手机"
 
 class PandoraTableViewController: UITableViewController {
     
@@ -17,6 +18,7 @@ class PandoraTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        operations.append(kWebUploader)
         operations.append(kSubscribeEmailNotification)
         operations.append(kSubscribedEmailNotification)
 
@@ -43,6 +45,9 @@ class PandoraTableViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         } else if operations[indexPath.row] ==  kSubscribedEmailNotification {
             navigationController?.pushViewController(SubscribedEmailNotificationController(), animated: true)
+        } else if operations[indexPath.row] ==  kWebUploader {
+            let vc = WebUploaderController.loadFromStoryboard(name: "Main", identifier: "webUploader")
+            navigationController?.pushViewController(vc, animated: true)
         }
     }
 

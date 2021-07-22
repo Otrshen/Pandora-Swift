@@ -10,5 +10,7 @@ target 'Pandora' do
   pod 'Moya', '~> 14.0'
   pod 'HandyJSON', '~> 5.0.2'
   pod 'SwiftyJSON', '~> 5.0.0'
-
+  
+  pod "GCDWebServer/WebUploader", "~> 3.0"
+  pod "GCDWebServer/WebDAV", "~> 3.0"
 end

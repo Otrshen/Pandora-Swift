@@ -100,6 +100,47 @@
             </objects>
             <point key="canvasLocation" x="-1448" y="483"/>
         </scene>
+        <!--Web Uploader Controller-->
+        <scene sceneID="4fS-6I-ffd">
+            <objects>
+                <viewController storyboardIdentifier="webUploader" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Vr9-fc-GC9" customClass="WebUploaderController" customModule="Pandora" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DOO-Wj-JV1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgW-5B-ZaU">
+                                <rect key="frame" x="15" y="104" width="384" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Qg-sO-BYI">
+                                <rect key="frame" x="15" y="174.5" width="384" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="kcJ-pZ-Ed2"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kcJ-pZ-Ed2" firstAttribute="trailing" secondItem="cgW-5B-ZaU" secondAttribute="trailing" constant="15" id="DQn-4X-eue"/>
+                            <constraint firstItem="cgW-5B-ZaU" firstAttribute="leading" secondItem="kcJ-pZ-Ed2" secondAttribute="leading" constant="15" id="L6N-dh-ZUK"/>
+                            <constraint firstItem="9Qg-sO-BYI" firstAttribute="top" secondItem="cgW-5B-ZaU" secondAttribute="bottom" constant="50" id="Lse-zO-Hi8"/>
+                            <constraint firstItem="cgW-5B-ZaU" firstAttribute="top" secondItem="kcJ-pZ-Ed2" secondAttribute="top" constant="60" id="TKv-Bg-y0E"/>
+                            <constraint firstItem="9Qg-sO-BYI" firstAttribute="leading" secondItem="kcJ-pZ-Ed2" secondAttribute="leading" constant="15" id="mLO-MR-25E"/>
+                            <constraint firstItem="kcJ-pZ-Ed2" firstAttribute="trailing" secondItem="9Qg-sO-BYI" secondAttribute="trailing" constant="15" id="snE-HZ-leI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="savePathLabel" destination="9Qg-sO-BYI" id="52O-zs-Zlp"/>
+                        <outlet property="serverUrlLabel" destination="cgW-5B-ZaU" id="Qsw-AL-E9Z"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YAL-UX-xcH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-559" y="483"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="systemBackgroundColor">

@@ -1,5 +1,10 @@
 PODS:
   - Alamofire (5.4.1)
+  - GCDWebServer/Core (3.5.4)
+  - GCDWebServer/WebDAV (3.5.4):
+    - GCDWebServer/Core
+  - GCDWebServer/WebUploader (3.5.4):
+    - GCDWebServer/Core
   - HandyJSON (5.0.2)
   - JCore (2.4.0)
   - JPush (3.4.0):
@@ -12,6 +17,8 @@ PODS:
   - SwiftyJSON (5.0.0)
 
 DEPENDENCIES:
+  - GCDWebServer/WebDAV (~> 3.0)
+  - GCDWebServer/WebUploader (~> 3.0)
   - HandyJSON (~> 5.0.2)
   - JPush
   - Moya (~> 14.0)
@@ -21,6 +28,7 @@ DEPENDENCIES:
 SPEC REPOS:
   https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
     - Alamofire
+    - GCDWebServer
     - HandyJSON
     - JCore
     - JPush
@@ -30,6 +38,7 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  GCDWebServer: 2c156a56c8226e2d5c0c3f208a3621ccffbe3ce4
   HandyJSON: 9e4e236f5d2dbefad5155a77417bbea438201c03
   JCore: a29e4b0ee54e1301446dc02d8e1c350404108b34
   JPush: defaa108c38806f6efdcfaf4c416854d25fca8e5
@@ -37,6 +46,6 @@ SPEC CHECKSUMS:
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
 
-PODFILE CHECKSUM: d13e06b7fb7825cb24221b8fe71a6b2d6279e665
+PODFILE CHECKSUM: 76c9d27ccd19c8acd4044ed63a874b86c5b4668c
 
 COCOAPODS: 1.10.1
